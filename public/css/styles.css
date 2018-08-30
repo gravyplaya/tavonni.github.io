@@ -339,7 +339,8 @@ p {
 	font-size: 0;
 }
 .container_button_message,
-.container_button_subscribe {
+.container_button_subscribe, 
+.donate-with-crypto {
 	display: inline-block;
 	margin-right: 20px;
 	min-height: 40px;
@@ -347,27 +348,32 @@ p {
     line-height: 40px;
 	border: 1px solid #fff;
 	background: none;
-	color: #fff;
+	color: #d2d2b5;
 	font-size: 14px;
 	transition: background 0.3s, border 0.3s;
+	background: #ac933b;
+
 }
-.container_button_message {
-	background: #fff;
-	color: #444;
-}
+
 .container_button_message:last-child ,
 .container_button_subscribe:last-child  {
 	margin-right: 0;
 }
-.container_button_message:hover {
+.container_button_message a,
+.container_button_subscribe a,
+.donate-with-crypto span  {
+	color: #fff;
+	letter-spacing: .08em;
+	font-size: 1.2em;
+}
+.container_button_message:hover, 
+.container_button_subscribe:hover,
+.donate-with-crypto:hover {
 	background: #dd543d;
 	border-color: #dd543d;
 	color: #fff;
 }
-.container_button_subscribe:hover {
-	background: #fff;
-	color: #444;
-}
+
 .green_button {
 	background: #4ace6f;
 	color: #fff;
@@ -629,7 +635,7 @@ p {
 	background: #516070;
 }
 .best_price.price_block:before {
-	content: "Best Price";
+	content: "Best Time";
     position: absolute;
     z-index: 3;
     top: 22px;
@@ -724,15 +730,28 @@ p {
 /******* Statistic section *******/
 
 .statistic {
-    padding: 150px 0 120px;
+    padding: 1px 0 62px;
 	color: #000;
+	/* background: url('../images/creative-elements.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed; */
+	border: 0;
+}
+.statistic::before {
 	background: url('../images/creative-elements.jpg') no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
-	border: 0;
-}
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	z-index: 0;
+	opacity: 0.4;
+	}
 .statistic_title {
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 0.1px #000;
 }
 .statistic_counter {
 	font-size: 85px;
@@ -756,6 +775,7 @@ p {
 .gallery_block {
 	margin-bottom: 10px !important;
 	border: 1px solid #fff;
+	opacity: 1;
 }
 .wide_three_item_gallery_square .gallery_block {
 	height: 530px;
@@ -779,7 +799,7 @@ p {
 	min-width: 100%;
 }
 .gallery_overlay {
-	opacity: 0;
+	opacity: 0.4;
 	background: rgba(0, 0, 0, 0.5);
 	transition: opacity 0.4s;
 }
@@ -800,7 +820,7 @@ p {
 	bottom: -5px;
 	font-size: 20px;
     font-family: "robotolight", sans-serif;
-	opacity: 0;
+	opacity: 0.9;
 	transition: bottom 0.3s ease-in 0.1s, opacity 0.3s ease-in 0.1s;
 }
 .gallery_block:hover .gallery_caption {
@@ -811,7 +831,7 @@ p {
 	position: relative;
 	bottom: -5px;
     font-size: 14px;
-	opacity: 0;
+	opacity: 0.9;
 	transition: bottom 0.3s ease-in 0.2s, opacity 0.3s ease-in 0.2s;
 }
 .gallery_block:hover .gallery_description {

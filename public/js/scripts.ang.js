@@ -5,26 +5,23 @@
 var app = angular.module('myPage', ['ngTouch']);
 app.controller('myPageCtrl', function($scope,$http){
 
-	/* ------------------------------ */
-	/* GOOGLE MAP
-	/* ------------------------------ */
+	// detect when all partials are loaded then enable scrollspy for navigation control
+	  var nIncludes = 0;
+	  $scope.$on('$includeContentRequested', function (event, templateName) {
+		nIncludes++;
+		// console.log(nIncludes, '$includeContentRequested', templateName);
+	  });
+	  
+	  $scope.$on("$includeContentLoaded", function (event, templateName) {          
+		 nIncludes--;
+		 // console.log(nIncludes, '$includeContentLoaded', templateName);
+		 if (nIncludes === 0) {
+		   // console.log('everything is loaded!!');
+		   $scope.scrollSpy();
+		 }            
+	  }); 
 
-/* 	$scope.mapInitialization = function() {
-		$scope.myLatlng = new google.maps.LatLng(33.96290,-118.43589),
-		$scope.mapOptions = {
-			zoom: 14,
-			scrollwheel: false,
-			center: $scope.myLatlng
-		},
-		$scope.map = new google.maps.Map(document.getElementById('map'), $scope.mapOptions),
-		$scope.marker = new google.maps.Marker({
-			position: $scope.myLatlng,
-			map: $scope.map,
-			icon: "images/map.png"
-		});
-	}
 
-	$scope.mapInitialization(); */
 
 	/* ------------------------------ */
 	/* SCROLL BUTTON
@@ -133,7 +130,7 @@ app.controller('myPageCtrl', function($scope,$http){
 		});
 	}
 	
-	$scope.counterInit();
+	// $scope.counterInit();
 
 	/* ------------------------------ */
 	/* SHOW MODAL SUBSCRIBE WINDOW
