@@ -1,175 +1,394 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="innovate, innovation, blockchain, crypto, cryptocurrency, bitcoin, multichain, ethereum, ICO, creative, technology, crypto wallets, paper wallets, gift cards, foldable display, hologram, augmented reality, subscription, thin film, voting, election">
-	<meta name="description" content="Tavonni helps organizations take advantage of the benefits of blockchain and adjacent technologies. Whether they are looking to create efficiency gains, to extend existing products and services to new clients or to completely reinvent an existing business model from the ground up.">
-<meta property="og:type" content="business.business">
-<meta property="og:title" content="Tavonni Creative Technologies - We build technology so you dont have to.">
-<meta property="og:url" content="https://www.tavonni.com">
-<meta property="og:image" content="http://www.tavonni.com/images/logo-icon.jpg">
-	<title>Tavonni Creative Technologies - We build technology so you dont have to.</title>
-	<link rel="shortcut icon" href="images/favicon.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114.png">
-	<link href="css/uikit.css" rel="stylesheet" media="all">
-	<link href="css/styles.css" rel="stylesheet" media="all">
-</head>
-<body data-ng-app="myPage" data-ng-controller="myPageCtrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="innovate, innovation, blockchain, crypto, cryptocurrency, bitcoin, multichain, ethereum, ICO, creative, technology, crypto wallets, paper wallets, gift cards, foldable display, hologram, augmented reality, subscription, thin film, voting, election"
+    />
+    <meta
+      name="description"
+      content="Tavonni helps organizations take advantage of the benefits of blockchain and adjacent technologies. Whether they are looking to create efficiency gains, to extend existing products and services to new clients or to completely reinvent an existing business model from the ground up."
+    />
+    <meta property="og:type" content="business.business" />
+    <meta
+      property="og:title"
+      content="Tavonni Creative Technologies - We build technology so you don't have to."
+    />
+    <meta property="og:url" content="https://www.tavonni.com" />
+    <meta
+      property="og:image"
+      content="http://www.tavonni.com/images/logo-icon.jpg"
+    />
+    <title>
+      Tavonni Creative Technologies - We build technology so you don't have to.
+    </title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="images/apple-icon-57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="images/apple-icon-72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="images/apple-icon-114.png"
+    />
+    <link href="css/uikit.css" rel="stylesheet" media="all" />
+    <link href="css/styles.css" rel="stylesheet" media="all" />
+  </head>
+  <body data-ng-app="myPage" data-ng-controller="myPageCtrl">
+    <!-- Spinner -->
+    <div class="spinner">
+      <div class="spinner_wrapper">
+        <div class="spinner_folding_cube">
+          <div class="spinner_cube1 spinner_cube"></div>
+          <div class="spinner_cube2 spinner_cube"></div>
+          <div class="spinner_cube4 spinner_cube"></div>
+          <div class="spinner_cube3 spinner_cube"></div>
+        </div>
+      </div>
+    </div>
 
-<!-- Spinner -->
-<div class="spinner">
-	<div class="spinner_wrapper">
-		<div class="spinner_folding_cube">
-			<div class="spinner_cube1 spinner_cube"></div>
-			<div class="spinner_cube2 spinner_cube"></div>
-			<div class="spinner_cube4 spinner_cube"></div>
-			<div class="spinner_cube3 spinner_cube"></div>
-		</div>
-	</div>
-</div>
+    <!-- Page wrapper -->
+    <div class="wrapper">
+      <!-- Header -->
+      <div ng-include src="'/partials/header.html'" autoscroll="true"></div>
 
-<!-- Page wrapper -->
-<div class="wrapper">
+      <!-- Text container -->
+      <section
+        class="
+          uk-height-viewport
+          uk-cover-background
+          uk-position-relative
+          uk-flex
+          uk-flex-middle
+          uk-overflow-hidden
+          grey_overlay
+          container
+        "
+      >
+        <!-- Video background -->
+        <div class="video_wrapper">
+          <video
+            id="video"
+            class="video"
+            autoplay="autoplay"
+            loop="loop"
+            muted="muted"
+          >
+            <source src="media/glass-sunset.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-<!-- Header -->
-<div ng-include src="'/partials/header.html'" autoscroll="true"></div>
+        <div
+          class="
+            uk-container
+            uk-container-center
+            uk-width-1-1
+            uk-text-center
+            uk-position-relative
+            container_block
+          "
+        >
+          <div class="container_block">
+            <h1 class="uk-h1 container_title">TAVONNI</h1>
+            <h2 class="uk-h2 container_subtitle">CREATIVE TECHNOLOGIES</h2>
+            <div class="container_description">
+              Tavonni takes care of painful migrations to new and future
+              technologies, to enable the business of tomorrow.
+            </div>
+            <!-- BUTTONS -->
+            <div
+              class="
+                uk-position-relative uk-margin-large-bottom uk-width-1-1
+                container_button
+              "
+            >
+              <!-- <div class="uk-button uk-border-rounded container_button_message"><a href="https://store.tavonni.com" target="new">Store</a></div> -->
+              <div
+                class="uk-button uk-border-rounded container_button_subscribe"
+              >
+                <a href="https://electionexplorer.net" target="new"
+                  >Election Explorer</a
+                >
+              </div>
+              <div
+                class="uk-button uk-border-rounded container_button_subscribe"
+              >
+                <a href="https://cryptoforhumanity.co" target="new"
+                  >Crypto For Humanity</a
+                >
+              </div>
+              <div
+                class="uk-button uk-border-rounded container_button_subscribe"
+              >
+                <a href="https://store.tavonni.com" target="new"
+                  >Crypto Wallet</a
+                >
+              </div>
+              <div
+                class="uk-button uk-border-rounded container_button_subscribe"
+              >
+                <a href="#" target="new">Cards (Coming Soon)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-ng-click="scrollNav($event)"
+          class="uk-icon-angle-down container_arrow"
+        ></div>
+      </section>
 
-<!-- Text container -->
-<section class="uk-height-viewport uk-cover-background uk-position-relative uk-flex uk-flex-middle uk-overflow-hidden grey_overlay container">
+      <!-- Elements -->
+      <section class="elements section">
+        <div
+          class="uk-container uk-container-center uk-text-center"
+          data-uk-scrollspy="{cls:'uk-active'}"
+        >
+          <h3
+            class="
+              uk-h3 uk-margin-bottom uk-margin-top
+              animated
+              section_title
+              elements_title
+            "
+          >
+            What We Do
+          </h3>
+          <h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">
+            Tavonni helps organizations take advantage of the benefits of
+            blockchain and adjacent technologies. Whether looking to create
+            efficiency gains, to extend existing products and services to new
+            clients or to completely reinvent an existing business model from
+            the ground up.
+          </h4>
+          <div class="uk-grid uk-grid-large">
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div
+                  class="
+                    uk-icon-location-arrow uk-border-circle
+                    elements_item_label
+                  "
+                ></div>
+                <h4 class="uk-h4 elements_item_text">
+                  Ride Share / Delivery App
+                </h4>
+                <p class="elements_item_desc">
+                  Have an idea that has ride share capabilities? We have a ride
+                  share app you can use within weeks to make your Ride Share app
+                  happen sooner than you think.
+                </p>
+              </div>
+            </div>
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div
+                  class="uk-icon-tag uk-border-circle elements_item_label"
+                ></div>
+                <h4 class="uk-h4 elements_item_text">Blockchain Voting</h4>
+                <p class="elements_item_desc">
+                  Want secure voting and decision making. Use our blockchain
+                  based voting platform with ease.
+                  <a href="https://electionexplorer.net" target="_new"
+                    >Learn More...</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div
+                  class="uk-icon-users uk-border-circle elements_item_label"
+                ></div>
+                <h4 class="uk-h4 elements_item_text">Messengers</h4>
+                <p class="elements_item_desc">
+                  Have an idea that needs messaging capabilities? We have a
+                  messenger app you can use within weeks to make your community
+                  communications happen sooner than you think.
+                </p>
+              </div>
+            </div>
+            <div class="uk-width-large-1-4 uk-width-small-1-2 animated">
+              <div class="uk-margin-large-bottom elements_item">
+                <div
+                  class="
+                    uk-icon-innovation uk-border-circle
+                    elements_item_label
+                  "
+                ></div>
+                <h4 class="uk-h4 elements_item_text">Innovation</h4>
+                <p class="elements_item_desc">
+                  Our developers use a unique mix of current technologies or
+                  develop their own to turn your idea into reality. Consult with
+                  us to help your business take advantage of the latest and
+                  greatest technologies to help you succeed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<!-- Video background -->
-	<div class="video_wrapper">
-		<video id="video" class="video" autoplay="autoplay" loop="loop" muted="muted">
-			<source src="media/glass-sunset.mp4" type="video/mp4">
-		</video>
-	</div>
+      <!-- Description -->
+      <section class="description section">
+        <div class="uk-grid uk-grid-collapse">
+          <div class="uk-width-large-1-2 uk-flex uk-flex-middle">
+            <div
+              class="uk-container description_block"
+              data-uk-scrollspy="{cls:'uk-active'}"
+            >
+              <h3
+                class="uk-h3 uk-margin-large-bottom animated description_title"
+              >
+                Tavonni Crypto Wallet
+              </h3>
+              <p class="animated description_text">
+                Storage and security of Bitcoin and other cryptocurrencies can
+                sometimes be a hastle. NOW you can use the Tavonni Wallet to
+                securely store your crypto offline. NO ACCOUNTS, NO PASSWORDS.
+                You hold it. Its yours. Its as easy as tapping the card to your
+                phone. <br />
+                <a href="https://store.tavonni.com"
+                  ><strong>GET YOURS NOW</strong></a
+                >
+              </p>
+            </div>
+          </div>
+          <div
+            class="uk-width-large-1-2 description_image"
+            data-image="images/3.jpg"
+          ></div>
+        </div>
+      </section>
 
-	<div class="uk-container uk-container-center uk-width-1-1 uk-text-center uk-position-relative container_block">
+      <!-- Description 2 -->
+      <section
+        class="price_container description description_secondary section"
+      >
+        <div class="uk-grid uk-grid-collapse">
+          <div
+            class="uk-width-large-1-2 description_image"
+            data-image="images/person-holding-card.jpg"
+          ></div>
+          <div class="uk-width-large-1-2 uk-flex uk-flex-middle">
+            <div
+              class="uk-container description_block price_container"
+              data-uk-scrollspy="{cls:'uk-active'}"
+            >
+              <h3
+                class="uk-h3 uk-margin-large-bottom animated description_title"
+              >
+                Tavonni Cards
+              </h3>
+              <p class="animated description_text">
+                <span class="uk-icon-forward"></span> Sign up to get cash back
+                on all purchases
+              </p>
+              <p class="animated description_text">
+                <span class="uk-icon-forward"></span> Load and reload your card
+                via ACH/Direct Deposit
+              </p>
+              <p class="animated description_text">
+                <span class="uk-icon-forward"></span> Top up cards with cash at
+                retailers including CVS, Walgreens, and Dollar General
+              </p>
+              <p class="animated description_text">
+                <span class="uk-icon-forward"></span> Use your card at over
+                55,000 ATMs nationwide, with no additional fee charged by
+                Tavonni for withdrawals
+              </p>
+              <p class="animated description_text">
+                <span class="uk-icon-forward"></span> Every time you swipe your
+                card, you can receive awesome rewards or cash back. (Crypto
+                rewards coming soon)
+              </p>
+              <p class="animated description_text">
+                <a href="#"><strong>GET YOURS SOON</strong></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<div class="container_block">
-			<h1 class="uk-h1 container_title">TAVONNI</h1>
-			<h2 class="uk-h2 container_subtitle">CREATIVE TECHNOLOGIES</h2>
-			<div class="container_description">We build technology so you don't have to</div>
-			<!-- BUTTONS -->
- 			<div class="uk-position-relative uk-margin-large-bottom uk-width-1-1 container_button">
-				<!-- <div class="uk-button uk-border-rounded container_button_message"><a href="https://store.tavonni.com" target="new">Store</a></div> -->
-				<div class="uk-button uk-border-rounded container_button_subscribe"><a href="https://electionexplorer.net" target="new">Election Explorer</a></div>
-				<div class="uk-button uk-border-rounded container_button_subscribe"><a href="https://cryptoforhumanity.co" target="new">Crypto For Humanity</a></div>
-				<div class="uk-button uk-border-rounded container_button_subscribe"><a href="https://store.tavonni.com" target="new">Store</a></div>
-			</div>
-		</div>
+      <!-- Description 3 -->
+      <section class="description section">
+        <div class="uk-grid uk-grid-collapse">
+          <div class="uk-width-large-1-2 uk-flex uk-flex-middle">
+            <div
+              class="uk-container description_block"
+              data-uk-scrollspy="{cls:'uk-active'}"
+            >
+              <h3
+                class="uk-h3 uk-margin-large-bottom animated description_title"
+              >
+                The best start for your business idea
+              </h3>
+              <p class="animated description_text">
+                Have an idea but not sure what technology to use or how to build
+                it? Our creative developers will figure out the best technology
+                for your idea. Get your Proof of Concept built and launch your
+                product right away. Use our patent award winning team for a
+                visually appealing and powerful presense.
+              </p>
+              <p class="animated description_text">
+                Blockchain is the next disruptive technology. We can show you
+                how to implement blockchain for your organization. Create your
+                own innovation using the same technology that powers Bitcoin.
+              </p>
+            </div>
+          </div>
+          <div
+            class="uk-width-large-1-2 description_image"
+            data-image="images/idea-solution.jpg"
+          ></div>
+        </div>
+      </section>
 
-	</div>
-	<div data-ng-click="scrollNav($event)" class="uk-icon-angle-down container_arrow"></div>
-</section>
-
-<!-- Elements -->
-<section class="elements section">
-
-	<div class="uk-container uk-container-center uk-text-center" data-uk-scrollspy="{cls:'uk-active'}">
-	<h3 class="uk-h3 uk-margin-bottom animated section_title elements_title">What we offer</h3>
-	<h4 class="uk-h4 uk-margin-large-bottom animated section_subtitle">Tavonni takes care of painful migrations to new and future technologies, to enable the business of tomorrow. <br />We provide this at low cost so you can use it TODAY!</h4>
-		<div class="uk-grid uk-grid-large">
-			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
-				<div class="uk-margin-large-bottom elements_item">
-					<div class="uk-icon-location-arrow uk-border-circle elements_item_label"></div>
-					<h4 class="uk-h4 elements_item_text">Ride Share Clone</h4>
-					<p class="elements_item_desc">Have an idea that has ride share capabilities. We have a ride share app you can use within weeks to make your Ride Share app happen sooner than you think. </p>
-				</div>
-			</div>
-			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
-				<div class="uk-margin-large-bottom elements_item">
-					<div class="uk-icon-tag uk-border-circle elements_item_label"></div>
-					<h4 class="uk-h4 elements_item_text">Blockchain Voting</h4>
-					<p class="elements_item_desc">Want secure voting and decision making. Use our blockchain based voting platform with ease. <a href="https://cryptoforhumanity.co" target="_new">Learn More...</a></p>
-				</div>
-			</div>
-			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
-				<div class="uk-margin-large-bottom elements_item">
-					<div class="uk-icon-bar-chart-o uk-border-circle elements_item_label"></div>
-					<h4 class="uk-h4 elements_item_text">Advanced analytics</h4>
-					<!-- <p class="elements_item_desc">Lorem ipsum dolor sit amet, cons ec tetur ducimus orem ipsum do lor sit amet, consectetur ipsum dolor</p> -->
-				</div>
-			</div>
-			<div class="uk-width-large-1-4 uk-width-small-1-2 animated">
-				<div class="uk-margin-large-bottom elements_item">
-					<div class="uk-icon-innovation uk-border-circle elements_item_label"></div>
-					<h4 class="uk-h4 elements_item_text">Innovation</h4>
-					<p class="elements_item_desc">Consult with us to help your business take advantage of the latest and greatest technologies to help you succeed. </p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Description -->
-<section class="description section">
-	<div class="uk-grid uk-grid-collapse">
-		<div class="uk-width-large-1-2 uk-flex uk-flex-middle">
-			<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
-				<h3 class="uk-h3 uk-margin-large-bottom animated description_title">Mobile App, Dashboards and Enterprise Applications Development</h3>
-				<p class="animated description_text">
-						UI is how something is crafted to achieve balance in appearance, function, and user experience. It's the parts of a product you can see, hear, feel, smell and taste, but also how they behave when you do any of those. 
-					From a simple mobile app to a full blown enterprise application. Lets us build what it takes to make your organization run more effectively and securely while looking good at the same time.</p>
-			</div>
-		</div>
-		<div class="uk-width-large-1-2 description_image" data-image="images/app-dev.jpg"></div>
-	</div>
-</section>
-
-<!-- Description secondary -->
-<section class="description description_secondary section">
+      <!-- Description 4 -->
+      <!-- <section class="description description_secondary section">
 	<div class="uk-grid uk-grid-collapse">
 		<div class="uk-width-large-1-2 description_image" data-image="images/idea-solution.jpg"></div>
 		<div class="uk-width-large-1-2 uk-flex uk-flex-middle">
 			<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
 				<h3 class="uk-h3 uk-margin-large-bottom animated description_title">The best start for your business idea</h3>
 				<p class="animated description_text">Have an idea but not sure what technology to use or how to build it? Our creative developers will figure out the best technology for your idea. Get your Proof of Concept built and launch your product right away. Use our patent award winning team for a visually appealing and powerful presense. </p>
+				<p class="animated description_text">Blockchain is the next disruptive technology. We can show you how to implement blockchain for your organization. Create your own innovation using the same technology that powers Bitcoin. </p>
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
-<!-- Description 3 -->
-<section class="description section">
-	<div class="uk-grid uk-grid-collapse">
-		<div class="uk-width-large-1-2 uk-flex uk-flex-middle">
-			<div class="uk-container description_block" data-uk-scrollspy="{cls:'uk-active'}">
-				<h3 class="uk-h3 uk-margin-medium-bottom animated description_title">Blockchain Consulting</h3>
-				<p class="animated description_text">Blockchain is the next disruptive technology. We can show you how to implement blockchain for your organization. Create your own innovation using the same technology that powers bitcoin.</p>
-				<h3 class="uk-h3 uk-margin-medium-bottom animated description_title">Blockchain Hosting</h3>
-				<p class="animated description_text">Let us design and host your own custom blockchain solution. For personal, business or enterprise use.
-					<ul>
-						<li>Public or Private Blockchain</li><li>Asset Management</li><li>Smart Contracts</li><li>NFTs</li>
-					</ul>
-				</p>
-			</div>
-		</div>
-		<div class="uk-width-large-1-2 description_image" data-image="images/consulting.jpg"></div>
-	</div>
-</section>
-<!-- Pipeline -->
-<div ng-include src="'/partials/pipeline.html'"></div>
+      <!-- Pipeline -->
+      <!-- <div ng-include src="'/partials/pipeline.html'"></div> -->
 
-<!-- 4k4w -->
-<div ng-include src="'/partials/4k4w.html'"></div>
+      <!-- Cards -->
+      <!-- <div ng-include src="'/partials/cards.html'"></div> -->
 
+      <!-- Statistics -->
+      <!-- <div ng-include src="'/partials/stats.html'"></div> -->
 
-
-<!-- Statistics -->
-<!-- <div ng-include src="'/partials/stats.html'"></div> -->
-
-<!-- Gallery -->
-<section class="projects statistic wide_four_item_gallery section" data-uk-scrollspy="{cls:'uk-active'}">
-	<div class="uk-margin-large"></div>
-	<h3 class="uk-h3 uk-text-center animated section_title statistic_title ">Our past projects</h3>
-	<!-- <h4 class="uk-h4 uk-text-center uk-margin-large-bottom animated section_subtitle  statistic_title">Tavonni takes care of painful migrations to new and future technologies, to enable the business of tomorrow.</h4> -->
-	<div class="uk-grid uk-grid-collapse">
-			<!-- <div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+      <!-- Gallery -->
+      <section
+        class="projects statistic wide_four_item_gallery section"
+        data-uk-scrollspy="{cls:'uk-active'}"
+      >
+        <div class="uk-margin-large"></div>
+        <h3 class="uk-h3 uk-text-center animated section_title statistic_title">
+          What We Did
+        </h3>
+        <!-- <h4 class="uk-h4 uk-text-center uk-margin-large-bottom animated section_subtitle  statistic_title">Tavonni takes care of painful migrations to new and future technologies, to enable the business of tomorrow.</h4> -->
+        <div class="uk-grid uk-grid-collapse">
+          <!-- <div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
 					<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="images/1.jpg" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
 						<div class="uk-position-cover gallery_overlay">
 							<div class="uk-text-center gallery_table">
@@ -225,179 +444,268 @@
 						</div>
 					</a>
 				</div> -->
-		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
-			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="images/hyperledger-animation.gif" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
-				<div class="uk-position-cover gallery_overlay">
-					<div class="uk-text-center gallery_table">
-						<div class="uk-text-center gallery_cell">
-							<div class="uk-text-center gallery_container">
-								<h4 class="uk-h4 uk-text-contrast gallery_caption">Hyperledger</h4>
-								<div class="uk-text-contrast gallery_description">Contributed to the Hyperledger Fabric project while working with Wells Fargo Bank</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
-			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="images/nublaas-animation.gif" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
-				<div class="uk-position-cover gallery_overlay">
-					<div class="uk-text-center gallery_table">
-						<div class="uk-text-center gallery_cell">
-							<div class="uk-text-center gallery_container">
-								<h4 class="uk-h4 uk-text-contrast gallery_caption">Integrated Data Center Management</h4>
-								<div class="uk-text-contrast gallery_description">Patent #9201702 granted on the interface that allows enterprizes to manage their cloud resources in the browser.</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
-			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block" href="images/finwell-animation.gif" data-lightbox-type="image" data-uk-lightbox="{group:'my-group'}">
-				<div class="uk-position-cover gallery_overlay">
-					<div class="uk-text-center gallery_table">
-						<div class="uk-text-center gallery_cell">
-							<div class="uk-text-center gallery_container">
-								<h4 class="uk-h4 uk-text-contrast gallery_caption">Cognitive UI</h4>
-								<div class="uk-text-contrast gallery_description">Developed a futuristic Cognitive UI display that changes based on a persons proximity and location to the screen. </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
-			<a class="uk-display-block uk-position-relative uk-overflow-hidden gallery_block">
-				<div class="uk-position-cover gallery_overlay">
-					<div class="uk-text-center gallery_table">
-						<div class="uk-text-center gallery_cell">
-							<div class="uk-text-center gallery_container">
-								<h4 class="uk-h4 uk-text-contrast gallery_caption">Blockchain Voting</h4>
-								<div class="uk-text-contrast gallery_description">Created the first voting platform that exceeds current election standards by huge margins flawlessly and securely. Guaranteeing perfect vote count, verifiable votes, instant reporting, etc.</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-</section>
+          <div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+            <a
+              class="
+                uk-display-block uk-position-relative uk-overflow-hidden
+                gallery_block
+              "
+              href="images/hyperledger-animation.gif"
+              data-lightbox-type="image"
+              data-uk-lightbox="{group:'my-group'}"
+            >
+              <div class="uk-position-cover gallery_overlay">
+                <div class="uk-text-center gallery_table">
+                  <div class="uk-text-center gallery_cell">
+                    <div class="uk-text-center gallery_container">
+                      <h4 class="uk-h4 uk-text-contrast gallery_caption">
+                        Hyperledger
+                      </h4>
+                      <div class="uk-text-contrast gallery_description">
+                        Contributed to the Hyperledger Fabric project while
+                        working with Wells Fargo Bank
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+            <a
+              class="
+                uk-display-block uk-position-relative uk-overflow-hidden
+                gallery_block
+              "
+              href="images/nublaas-animation.gif"
+              data-lightbox-type="image"
+              data-uk-lightbox="{group:'my-group'}"
+            >
+              <div class="uk-position-cover gallery_overlay">
+                <div class="uk-text-center gallery_table">
+                  <div class="uk-text-center gallery_cell">
+                    <div class="uk-text-center gallery_container">
+                      <h4 class="uk-h4 uk-text-contrast gallery_caption">
+                        Integrated Data Center Management
+                      </h4>
+                      <div class="uk-text-contrast gallery_description">
+                        Patent #9201702 granted on the interface that allows
+                        enterprizes to manage their cloud resources in the
+                        browser.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+            <a
+              class="
+                uk-display-block uk-position-relative uk-overflow-hidden
+                gallery_block
+              "
+              href="images/finwell-animation.gif"
+              data-lightbox-type="image"
+              data-uk-lightbox="{group:'my-group'}"
+            >
+              <div class="uk-position-cover gallery_overlay">
+                <div class="uk-text-center gallery_table">
+                  <div class="uk-text-center gallery_cell">
+                    <div class="uk-text-center gallery_container">
+                      <h4 class="uk-h4 uk-text-contrast gallery_caption">
+                        Cognitive UI
+                      </h4>
+                      <div class="uk-text-contrast gallery_description">
+                        Developed a futuristic Cognitive UI display that changes
+                        based on a persons proximity and location to the screen.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="uk-width-medium-1-2 uk-width-xlarge-1-4 animated">
+            <a
+              class="
+                uk-display-block uk-position-relative uk-overflow-hidden
+                gallery_block
+              "
+            >
+              <div class="uk-position-cover gallery_overlay">
+                <div class="uk-text-center gallery_table">
+                  <div class="uk-text-center gallery_cell">
+                    <div class="uk-text-center gallery_container">
+                      <h4 class="uk-h4 uk-text-contrast gallery_caption">
+                        Blockchain Voting
+                      </h4>
+                      <div class="uk-text-contrast gallery_description">
+                        Created the first voting platform that exceeds current
+                        election standards by huge margins flawlessly and
+                        securely. Guaranteeing perfect vote count, verifiable
+                        votes, instant reporting, etc.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
+      <!-- Clients -->
+      <!-- <div ng-include src="'/partials/clients.html'"></div> -->
 
-<!-- Clients -->
-<div ng-include src="'/partials/clients.html'"></div>
+      <!-- Team -->
+      <!-- <div ng-include src="'/partials/team.html'"></div> -->
 
-<!-- Team -->
-<!-- <div ng-include src="'/partials/team.html'"></div> -->
+      <!-- Contact -->
+      <div ng-include src="'/partials/contact.html'"></div>
 
-<!-- Contact -->
-<div ng-include src="'/partials/contact.html'"></div>
+      <!-- Footer -->
+      <div ng-include src="'/partials/footer.html'"></div>
 
-<!-- Footer -->
-<div ng-include src="'/partials/footer.html'"></div>
+      <!-- Scroll arrow -->
+      <div data-ng-click="scrollTop()" class="scroll_top"></div>
+    </div>
 
-<!-- Scroll arrow -->
-<div data-ng-click="scrollTop()" class="scroll_top"></div>
-
-</div>
-
-<!-- Mobile menu -->
-<div id="mobile_nav" class="uk-offcanvas">
-	<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-		<ul class="uk-nav uk-nav-offcanvas">
-			<li class="">
-				<a data-ng-click="scrollNav($event)" class="link_features" href="#">What We Do</a>
-			</li>
-			<li class="">
+    <!-- Mobile menu -->
+    <div id="mobile_nav" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+        <ul class="uk-nav uk-nav-offcanvas">
+          <li class="">
+            <a data-ng-click="scrollNav($event)" class="link_features" href="#"
+              >What We Do</a
+            >
+          </li>
+          <!-- <li class="">
 				<a data-ng-click="scrollNav($event)" class="link_offer" href="#">Pipeline</a>
-			</li>
-			<li class="">
-				<a data-ng-click="scrollNav($event)" class="link_clients" href="#">Clients</a>
-			</li>
-<!-- 			<li class="">
+			</li> -->
+          <li class="">
+            <a data-ng-click="scrollNav($event)" class="link_clients" href="#"
+              >Cards</a
+            >
+          </li>
+          <!-- 			<li class="">
 				<a data-ng-click="scrollNav($event)" class="link_facts" href="#">Token</a>
 			</li> -->
-			<li class="">
-				<a data-ng-click="scrollNav($event)" class="link_projects" href="#">Projects</a>
-			</li>
-			<li class="">
+          <li class="">
+            <a data-ng-click="scrollNav($event)" class="link_projects" href="#"
+              >What We Did</a
+            >
+          </li>
+          <!-- <li class="">
 				<a data-ng-click="scrollNav($event)" class="link_team" href="#">Team</a>
-			</li>
-			<li class="">
-				<a data-ng-click="scrollNav($event)" class="link_customers" href="#">Get In Touch</a>
-			</li>
-		</ul>
-	</div>
-</div>
-
-<!-- Modal subscribe window -->
-<div id="modal_subscribe" class="uk-modal subscribe_window">
-    <div class="uk-modal-dialog uk-text-center uk-border-rounded">
-		<h4 class="uk-h4 uk-text-contrast subscribe_window_title">Subscribe to our newsletter</h4>
-		<!-- NEWSLETTER FORM -->
-		<form data-ng-submit="subLetterForm($event);" class="uk-form form_sign_in" autocomplete="off">
-			<div class="uk-grid uk-grid-collapse uk-container-center uk-width-medium-3-4">
-				<div class="uk-width-medium-3-4 uk-margin-bottom">
-					<input name="email" class="uk-width-1-1 uk-text-contrast form_input" type="email" placeholder="Enter your e-mail">
-				</div>
-				<div class="uk-width-medium-1-4 uk-margin-bottom">
-					<button class="uk-width-1-1 uk-button button_custom_green form_button" type="submit">Subscribe</button>
-				</div>
-			</div>
-			<div class="response_wrapper">
-				<!-- IF MAIL SENT SUCCESSFULLY -->
-				<div class="success">Message Recieved.</div>
-				<div class="success_response"></div>
-
-				<!-- IF MAIL SENDING UNSUCCESSFULL -->
-				<div class="error">E-mail must be valid and name and message must not be empty.</div>
-				<div class="error_response"></div>
-			</div>
-		</form>
-        <a class="uk-modal-close uk-close uk-border-circle subscribe_window_close"></a>
+			</li> -->
+          <li class="">
+            <a data-ng-click="scrollNav($event)" class="link_customers" href="#"
+              >Get In Touch</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
 
+    <!-- Modal subscribe window -->
+    <div id="modal_subscribe" class="uk-modal subscribe_window">
+      <div class="uk-modal-dialog uk-text-center uk-border-rounded">
+        <h4 class="uk-h4 uk-text-contrast subscribe_window_title">
+          Subscribe to our newsletter
+        </h4>
+        <!-- NEWSLETTER FORM -->
+        <form
+          data-ng-submit="subLetterForm($event);"
+          class="uk-form form_sign_in"
+          autocomplete="off"
+        >
+          <div
+            class="
+              uk-grid uk-grid-collapse uk-container-center uk-width-medium-3-4
+            "
+          >
+            <div class="uk-width-medium-3-4 uk-margin-bottom">
+              <input
+                name="email"
+                class="uk-width-1-1 uk-text-contrast form_input"
+                type="email"
+                placeholder="Enter your e-mail"
+              />
+            </div>
+            <div class="uk-width-medium-1-4 uk-margin-bottom">
+              <button
+                class="uk-width-1-1 uk-button button_custom_green form_button"
+                type="submit"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="response_wrapper">
+            <!-- IF MAIL SENT SUCCESSFULLY -->
+            <div class="success">Message Recieved.</div>
+            <div class="success_response"></div>
 
-<script type="application/ld+json">
-	{
-	  "@context": "http://schema.org/",
-	  "@type": "Organization",
-	  "name": "Tavonni Creative Technologies, LLC.",
-	  "address": {
-		"@type": "PostalAddress",
-		"streetAddress": "",
-		"addressLocality": "South San Francisco",
-		"addressRegion": "California",
-		"postalCode": "94080"
-	  },
-	  "telephone": "866-996-2198"
-	}
-	</script>
-<script  type="text/javascript" src="js/angular.min.js"></script>
-<script  type="text/javascript" src="js/ngTouch.min.js"></script>
-<script  type="text/javascript" src="js/jquery.min.js"></script>
-<script  type="text/javascript" src="js/uikit.min.js"></script>
-<script  type="text/javascript" src="js/slideshow.min.js"></script>
-<script  type="text/javascript" src="js/slideshow-fx.min.js"></script>
-<script  type="text/javascript" src="js/slider.min.js"></script>
-<script  type="text/javascript" src="js/lightbox.min.js"></script>
-<script  type="text/javascript" src="js/countUp.js"></script>
-<script  type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
-<script  src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-<script  src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
-<script type="text/javascript" src="js/fbase.js"></script>
-<script type="text/javascript" src="js/scripts.ang.js"></script>
+            <!-- IF MAIL SENDING UNSUCCESSFULL -->
+            <div class="error">
+              E-mail must be valid and name and message must not be empty.
+            </div>
+            <div class="error_response"></div>
+          </div>
+        </form>
+        <a
+          class="
+            uk-modal-close uk-close uk-border-circle
+            subscribe_window_close
+          "
+        ></a>
+      </div>
+    </div>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120433886-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-120433886-1');
-</script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Tavonni Creative Technologies, LLC.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "",
+          "addressLocality": "South San Francisco",
+          "addressRegion": "California",
+          "postalCode": "94080"
+        },
+        "telephone": "866-996-2198"
+      }
+    </script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngTouch.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/uikit.min.js"></script>
+    <script type="text/javascript" src="js/slideshow.min.js"></script>
+    <script type="text/javascript" src="js/slideshow-fx.min.js"></script>
+    <script type="text/javascript" src="js/slider.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/countUp.js"></script>
+    <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <script type="text/javascript" src="js/fbase.js"></script>
+    <script type="text/javascript" src="js/scripts.ang.js"></script>
 
-<!-- www.freepik.com/free-photos-vectors/business - Business vectors created by Freepik -->
-</body>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-120433886-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-120433886-1");
+    </script>
+
+    <!-- www.freepik.com/free-photos-vectors/business - Business vectors created by Freepik -->
+  </body>
 </html>
